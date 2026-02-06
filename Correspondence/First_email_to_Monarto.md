@@ -4,7 +4,7 @@ I visited your park from interstate in January (2026) and had a wonderful day. Y
 
 While using the Safari bus, I noticed something that seemed to affect visitor experience: at downstream stops, some visitor groups (especially larger families) were repeatedly unable to board because there were not enough seats available for their whole group. This created uneven waiting times, and I could see the frustration building.
 
-I’m a final-year data science student at Curtin University, and I decided to put my skills to the test by building a computer simulation of your shuttle bus loop. The goal was to test whether a small change in boarding rules could reduce downstream wait issues and improve visitor experience without adding more buses.
+I’m a final-year data science student at Curtin University (Perth, Western Australia), and I decided to put my skills to the test by building a computer simulation of your shuttle bus loop. The goal was to test whether a small change in boarding rules could reduce downstream wait issues and improve visitor experience without adding more buses.
 
 What I modelled:
 I compared two boarding approaches on simulated peak-attendance days:
@@ -55,5 +55,5 @@ Kind Regards,
 
 Saf Flatters
 
-Final Year Data Science Student at Curtin University
+Final Year Data Science Student at Curtin University  
 https://www.linkedin.com/in/safflatters/
