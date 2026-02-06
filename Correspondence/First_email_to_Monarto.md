@@ -23,18 +23,18 @@ Across the 1200 simulated days, the "Reserve 5 Seats" approach:
 
 I've included three plots below (and attached) to show you these results. These plots are just a visual summary of one message: holding a small number of seats at the first stop reduces downstream boarding issues on peak days, especially for larger groups.
 
-Plot 1: 
-![alt text](../Outputs/plot1-exceedance-tail-curve.png)
+Plot 1:   
+![Plot 1](/Outputs/plot1-exceedance-tail-curve.png)  
 Notes for Plot 1 (Exceedance Curve): 
 This shows, across 1,200 simulated peak days, how likely each policy is to produce a really severe ‘missed-bus’ day. The orange line sits further left, meaning extreme peak-day outcomes are less likely when 5 seats are held back at the Visitor Centre. 
 
-Plot 2: 
-![alt text](../Outputs/plot2-stacked-bar-chart.png)
+Plot 2:   
+![Plot 2](/Outputs/plot2-stacked-bar-chart.png)  
 Notes for Plot 2 (Stacked Bars): 
 This zooms in on a bad peak day (95th percentile from the simulation set) and shows how many visitors miss 1–2, 3–4, or 5+ buses in a row, split by group size. Large groups are hit hardest when buses are filled at the first stop, and the reserved-seat policy improves all cases and almost eliminates the worst cases.
 
-Plot 3: 
-![alt text](../Outputs/plot3-radar.png)
+Plot 3:   
+![Plot 3](/Outputs/plot3-radar.png)  
 Notes for Plot 3 (Radars): 
 This shows where boarding problems occur by bus stop on a typical peak day (left) and a bad peak day (right). Further out means more visitors couldn’t board at that stop and allows for pinch points to be identified. The reserved-seat policy pulls the shape inward across stops, meaning fewer downstream boarding failures.
 
