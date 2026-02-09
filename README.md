@@ -20,7 +20,11 @@ This project is a Monte Carlo simulator of the bus loop that compares two simple
 - **Dwell time modelling** (groups rejoin queues after an exhibit visit delay)
 - **Tail-risk focus** using an exceedance (survival) curve to compare severe-day outcomes and can be used to compare multiple boarding policies at once. 
 
-## Plot Outputs
+## Outputs
+The project produces three main visuals:
+1. **Exceedance Tail Curve** - probability a day is “this bad or worse” (severity score based on worst consecutive missed boardings)
+2. **Stacked Bar Chart (Bad Day P95)** - maximum consecutive “unable to board” runs by group size band (with 0s removed for clarity)
+3. **Radar Charts (Typical vs Bad Day)** - total downstream refused-boardings by stop to identify pinch points
 To support decision making:  
 
 ![Plot 1: Tail Exceedance Curve](/Outputs/plot1-exceedance-tail-curve.png)
@@ -29,36 +33,11 @@ To support decision making:
 
 ![Plot 3: Radar](/Outputs/plot3-radar.png)
 
-## Features
-
-### Feature 1
-**Policy testing framework**
-- Swap in different seat-reserve policies (and extend to more stops) without rewriting the simulation core
-- Parameters are easy to adjust from a single location in the code
-
-### Feature 2
-**Fair comparison via reproducible runs**
-- Each `run_id` uses the same random seed across policies so the “same day” is tested under different rules
-
-### Outputs
-The project produces three main visuals:
-1. **Exceedance Tail Curve** - probability a day is “this bad or worse” (severity score based on worst consecutive missed boardings)
-2. **Stacked Bar Chart (Bad Day P95)** - maximum consecutive “unable to board” runs by group size band (with 0s removed for clarity)
-3. **Radar Charts (Typical vs Bad Day)** - total downstream refused-boardings by stop to identify pinch points
-
 ## Dependencies
 - Python 3.x
 - numpy
 - pandas
 - matplotlib
-
-## How to Run
-1. Clone the repo
-2. Install dependencies
-3. Run the main script / notebook that:
-   - runs `runMonteCarlo()` for both policies
-   - generates summary tables
-   - saves plots to the `Outputs/` folder
 
 ## Additional Features
 Ideas already supported or simple to add:
@@ -67,7 +46,6 @@ Ideas already supported or simple to add:
 - Time-varying arrival rates (morning surge, lunch surge)
 - Time-varying churn (e.g., cafe stop behaviour changes over the day)
 - More realistic segment travel times (random travel/dwell distributions instead of fixed)
-
 
 
 Data required for accurate calibration (rather than assumptions):
@@ -82,7 +60,7 @@ Data required for accurate calibration (rather than assumptions):
 - This is a proof-of-concept model: inputs are assumptions designed to reproduce system mechanics, not to claim operational truth
 - The model is most valuable for:
   - comparing policies fairly
-  - identifying tail-risk / worst-day behaviour
+  - identifying tail-risk / worst-peak-day behaviour
  
 
 ## Credits
